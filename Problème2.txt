@@ -1,0 +1,38 @@
+Début
+    Fonction dot_product(v1, v2)
+        Initialiser produitScalaire à 0
+
+        // Vérifier que les vecteurs ont la même longueur
+        Si la longueur de v1 est différente de la longueur de v2
+            Afficher "Les vecteurs doivent avoir la même longueur."
+            Retourner
+        Fin Si
+
+        // Calculer le produit scalaire
+        Pour i de 0 à longueur de v1 - 1
+            produitScalaire = produitScalaire + (v1[i] * v2[i])
+        Fin Pour
+
+        Retourner produitScalaire
+    Fin Fonction
+
+    Fonction verifierOrthogonalite(v1, v2)
+        produit = dot_product(v1, v2)
+
+        // Vérifier si le produit scalaire est nul
+        Si produit = 0
+            Afficher "Les vecteurs sont orthogonaux."
+        Sinon
+            Afficher "Les vecteurs ne sont pas orthogonaux."
+        Fin Si
+    Fin Fonction
+
+    // Exemple d'utilisation
+    v1 = [1, 2, 3]
+    v2 = [4, 5, 6]
+    verifierOrthogonalite(v1, v2) // Affichera "Les vecteurs ne sont pas orthogonaux."
+
+    v3 = [1, 2]
+    v4 = [-2, 1]
+    verifierOrthogonalite(v3, v4) // Affichera "Les vecteurs sont orthogonaux."
+Fin

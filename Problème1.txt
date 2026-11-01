@@ -1,0 +1,22 @@
+Début
+    Initialiser somme à 0
+    Initialiser tousLesElements comme une liste vide
+
+    // Ajouter les éléments de l'ensemble1
+    Pour chaque élément dans ensemble1
+        Si l'élément n'est pas dans tousLesElements
+            Ajouter l'élément à tousLesElements
+            Ajouter l'élément à somme
+        Fin Si
+    Fin Pour
+
+    // Ajouter les éléments de l'ensemble2
+    Pour chaque élément dans ensemble2
+        Si l'élément n'est pas dans tousLesElements
+            Ajouter l'élément à tousLesElements
+            Ajouter l'élément à somme
+        Fin Si
+    Fin Pour
+
+    Afficher "La somme des éléments distincts est :", somme
+Fin
